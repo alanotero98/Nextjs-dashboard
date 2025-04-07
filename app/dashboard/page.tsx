@@ -5,8 +5,11 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton,CardSkeleton, LatestInvoicesSkeleton} from '@/app/ui/skeletons';
 import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
+import { Metadata } from 'next';
 
-
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 export default async function Page() {
   const {
     numberOfInvoices,

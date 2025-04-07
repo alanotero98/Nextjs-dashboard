@@ -3,7 +3,11 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from './home.module.css';
 import Image from 'next/image';
-
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices | Acme Dashboard',
+};
 
 export default function Page() {
   return (
